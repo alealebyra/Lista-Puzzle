@@ -1,0 +1,9 @@
+problem4: main.o
+	g++ main.o -o problem4
+main.o: main.cpp
+ wezel.h lista.h puzzle.h
+	g++ -Wall -c main.cpp
+
+clean:
+	
+rm -f problem2 main.o
